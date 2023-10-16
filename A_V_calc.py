@@ -18,7 +18,7 @@ def FUNCTION_2(WIDTH, HEIGHT, LENGTH): #A=2*(wl+hl+hw)
 def FUNCTION_3(RADIUS,HEIGHT):  #functions for the circular cone calculations
     R2 = RADIUS**2
     PI = math.pi
-    return PI*(R2)(HEIGHT/3)
+    return PI*(R2)*(HEIGHT/3)
 def FUNCTION_4(RADIUS, HEIGHT):
     PIR = math.pi*RADIUS
     BRACKETSH = HEIGHT**2
@@ -104,6 +104,7 @@ while True: # Enters the main calculator loop
             print("4π",RADIUS,"^2","=", FUNCTION_6(RADIUS))
         if VIEWSELECTION == 'v':
             print("4π",RADIUS,"^2","=", FUNCTION_6(RADIUS)," | 4πr^2")
+            
     elif EQUATIONSELECT == "q": # Checks for quit again
         print("Thank you!")
         sleep(0.5)
